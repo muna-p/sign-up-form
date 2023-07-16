@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="sign-up.css">
+    <link rel="icon" type="image/png" href="Tangerine-logos_black.png"/>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <title> Tangerine - Sign Up</title>
+</head>
+<body>
+    <script src="sign-up.js" defer></script>
+    <form action="" method="post">
+        <div class="left-container">
+            <img src="Tangerine-logos_white.png" alt="Logo">
+            <div class="credit">Photo by <a href="https://unsplash.com/@hassaanhre"> Hassaan Here </a> on <a href="https://unsplash.com/"> Unsplash</a></div>
+        </div>
+        <div class="right-form">
+            <div class="top-text">
+                <p><strong>Tangerine</strong> is a data technology company. We provide world-class services to streamline your workflows.</p>
+                <p>What are you waiting for? Get started today!</p>
+            </div>
+            <div class="form-info">
+                <p>Sign Up</p>
+                <div class="outer-container">
+                    <div class="container">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder= " "  required>
+                    </div>
+                    <div class="container">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder= " "  required>
+                    </div>
+                </div>
+                <div class="outer-container">
+                    <div class="container">
+                        <label for="email_address">Email</label>
+                        <input type="email" id="email_address" name="email" placeholder= " "  required>
+                    </div>
+                    <div class="container">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" oninvalid="this.setCustomValidity('Please enter a 10 digit phone number, including your area code')" oninput="this.setCustomValidity('')" placeholder= " "  required>
+                    </div>
+                </div>
+                <div class="outer-container">
+                    <div class="container">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" oninvalid="this.setCustomValidity('Please enter a password with at least 1 number, 1 capital letter, and 1 lowercase letter')" oninput="this.setCustomValidity('')" placeholder= " "  required>
+                        <div id="wrongPassword"></div>
+                    </div>
+                    <div class="container">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}" oninvalid="this.setCustomValidity('Please confirm your password')" oninput="this.setCustomValidity('')" placeholder= " "  required>
+                    </div>
+                </div>
+            </div>
+            <button id="submitButton" type="submit">Create Account</button>
+            <p>Already Have An Account? <a href="sign-up.html">Log In</a></p>
+        </div>
+    </form>
+</body>
+</html>

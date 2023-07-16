@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    font-family: Lato, Clarkson, Cochin, Georgia, Times, 'Times New Roman';
+    color: rgb(107, 105, 105);
+}
+
+form {
+    display: flex;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    background: url("main-gradient.jpg") no-repeat;
+    background-size: cover;
+    width: 40vw;
+}
+
+.left-container  > img {
+    width: 300px;
+    height: auto;
+    margin-top: auto;
+}
+
+.credit {
+    margin-top: auto;
+}
+
+.right-form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(210, 210, 210);
+    justify-content: center;
+    width: 70vw;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    background-color: rgb(226, 227, 229);
+    box-shadow: 0px 14px 11px 0px #B7B7B7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.outer-container {
+    display: flex;
+    gap: 30px;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+}
+
+label {
+    text-transform: uppercase;
+}
+
+button {
+    width: 150px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: rgb(128, 158, 224);
+    border-color: white;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 2px 4px #999;
+    color: white;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: rgb(81, 109, 169);
+}
+
+button:active {
+    box-shadow: 2px 4px #636363;
+    transform: translateY(2px);
+}
+
+.form-info > p {
+    font-size: 40px;
+    margin: 0px;
+}
+
+.top-text {
+    font-size: 25px;
+    padding-left: 30px;
+    font-weight: 400;
+    inline-size: 40vw;
+}
+
+button ~ p {
+    padding-left: 30px;
+    color: rgb(72, 72, 72);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid rgb(81, 109, 169);
+}
+
+input:not(:placeholder-shown):invalid {
+    border: 2px solid red;
+}
